@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+   
+    <div class="contenido">
+
+        <div class="form">
+            <img src="img/logo.svg" alt="" >
+
+            <form action="" class="formulario">
+                
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese texto aqui">
+
+                <div class="botones">
+                    <input type="button" value="Encriptar" onclick="encriptarMensaje()" id="btnEncriptar"> 
+                    <input type="button" value="Desencriptar" onclick="desencriptarMensaje()" id="btnDescencriptar">
+                </div>
+            
+            </form>
+
+        </div>
+    
+        <div class="respuesta">
+            <img src="img/muñeco.svg" alt="muñeco" id="imgMuneco">
+            <input type="text" id="mensajeInput" class="mensaje-input" readonly>
+            <input type="button" value="Copiar" onclick="copiarMensaje()" id="btnCopiar" hidden>
+        </div>
+    </div>
+
+   
+   <script src="js/validaciones.js"></script>
+</body>
+</html>
